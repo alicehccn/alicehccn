@@ -1,0 +1,178 @@
+@media screen and (min-width: 660px) {
+
+  /**********************************
+  BODY
+  ***********************************/
+  header {
+    margin-bottom: 50px;
+    float: left;
+  }
+  #logo, #menu li{
+    display: inline;
+  }
+  #logo {
+    float: left;
+    font-size: 1.3em;
+  }
+  #menu {
+    position: relative;
+    float: right;
+    margin: 30px 50px 0 0;
+  }
+  #menu li{
+    padding-left: 50px;
+  }
+  .dropdown {
+    display: none;
+  }
+  h3, h4 {
+    font-size: 1.3em;
+  }
+  footer {
+    padding-top: 30px;
+  }
+
+  /**********************************
+  3 * 5 = 15
+  100% - 15% = 85%
+  85 / 3 = 28.333333333333333
+  
+  4x5=20 100-20=80
+  80/3=26.6666666
+  ***********************************/
+
+  /**********************************
+  PAGE: GALLERY
+  ***********************************/
+  #gallery li{
+    width: 23%;
+  }
+  #gallery:after {
+    clear: left;
+  }
+
+  /**********************************
+  PAGE: About
+  ***********************************/
+  .profile-photo {
+    float: left;
+    margin: 0 3% 100px 0;
+  }
+  
+  /**********************************
+  PAGE: Contact
+  ***********************************/
+  #primary {
+    max-width: 50%;
+    float: left;
+  }
+  #secondary {
+    width: 40%;
+    float: right;
+  }
+  .contact-info a {
+  min-height: 35px;
+  background-size: 35px;
+  padding: 5px 0 0 40px;
+  font-size: 1.2em;
+  }
+  
+  /**********************************
+  Lightbox
+  ***********************************/
+  #overlay {
+    background: white;
+    width: 70%;
+    position: relative;
+    top: 10%;
+    left: 15%;
+    display: none;
+    text-align: center;
+    z-index: 10001;
+  }
+  #theShadow {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+    z-index: 10000;
+  }
+  #overlay img {
+    width: 96%;
+    margin-top: 2%;
+    margin-bottom: 5px;
+  }
+  #overlay.portrait-image {
+    width: 30%;
+    top: 5%;
+    left: 35%;
+  }
+  #next-arrow {
+  position: fixed;
+  right: 0.1%;
+  font-size: 4em; 
+  margin-right: 0;
+  padding: 50px 20px 50px 100px; 
+
+  }
+  #prev-arrow {
+  position: fixed;
+  left: 0.1%;
+  font-size: 4em; 
+  margin-left: 0;
+  padding: 50px 100px 50px 20px; 
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #next, #previous, #next-arrow, #prev-arrow {
+  top: 20%;
+  font-size: 3em;
+  color: #C1CDCD;
+  cursor: pointer;
+  }
+  #next, #next-arrow {
+  right: 0.1%;
+  margin-right: 0;
+  padding: 50px 20px 50px 100px; 
+  }
+  #previous, #previous-arrow {
+  left: 0.1%;
+  margin-left: 0;
+  padding: 50px 100px 50px 20px; 
+  }
+  #gallery li p {
+    font-size: 1.1em;
+    padding: 5px;
+  }
+  #overlay {
+  background: white;
+  width: 60%;
+  position: relative;
+  top: 8%;
+  left: 20%;
+  display: none;
+  text-align: center;
+  z-index: 10001;
+  }
+}
+
+/**********************************
+Page-scroll
+***********************************/
+@media screen and (min-height: 667px) {
+  #next, #previous, #next-arrow, #prev-arrow {
+    bottom: 20%;
+  }
+}
+
+@media screen and (min-height: 736px) {
+  #next, #previous, #next-arrow, #prev-arrow {
+    bottom: 21%;
+  }
+}
+  
